@@ -31,4 +31,4 @@ jobs:
       env:
         GOOGLE_PROJECT: ${{ secrets.GOOGLE_PROJECT }}
       run: |
-        gcloud run deploy free-palestine --image gus-central1-docker.pkg.dev/$GOOGLE_PROJECT/moataz-repo/free-palestine:latest --platform managed --region us-central1 --allow-unauthenticated   
+        gcloud run deploy free-palestine --image us-central1-docker.pkg.dev/$GOOGLE_PROJECT/moataz-repo/free-palestine:latest --platform managed --region us-central1 --allow-unauthenticated   
