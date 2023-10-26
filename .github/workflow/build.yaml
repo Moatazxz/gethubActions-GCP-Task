@@ -25,5 +25,5 @@ jobs:
         GOOGLE_PROJECT: ${{ secrets.GOOGLE_PROJECT }}
       run: |
         gcloud auth configure-docker us-central1-docker.pkg.dev
-        docker build -t us-central1-docker.pkg.dev/devops-task-402821/moataz-repo/free-palestine:latest .
-        docker push us-central1-docker.pkg.dev/devops-task-402821/moataz-repo/free-palestine:latest
+        docker build -t us-central1-docker.pkg.dev/$GOOGLE_PROJECT/moataz-repo/free-palestine:latest .
+        docker push us-central1-docker.pkg.dev/$GOOGLE_PROJECT/moataz-repo/free-palestine:latest
